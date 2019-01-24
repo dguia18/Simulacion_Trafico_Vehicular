@@ -6,7 +6,7 @@ public class carsInstantate : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject car;
-    public float instanceRate = 120.0f;
+    private float instanceRate = 10f;
     private float nextInstance = 0.0f;
     void Start()
     {
@@ -18,7 +18,7 @@ public class carsInstantate : MonoBehaviour
     {
         if (Time.time> nextInstance)
         {
-            nextInstance = Time.time + instanceRate;
+            nextInstance = Time.time + Random.Range(1,2);
             Instantiate(car,transform.position,transform.rotation);
         }
     }

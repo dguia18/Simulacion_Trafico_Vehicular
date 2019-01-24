@@ -9,15 +9,14 @@ public class carsMovements : MonoBehaviour
     public float speed = 5f;
     void Start()
     {
-        
-       //GetComponent<Rigidbody>().AddForce(Vector3. * impulseForce, ForceMode.Impulse);
-        transform.Translate(0, 0, speed * Time.deltaTime);
-        transform.rotation = Quaternion.Lerp(transform.rotation, transform.rotation, speed * Time.deltaTime);
+       //GetComponent<Rigidbody>().AddForce(Vector3.up * impulseForce, ForceMode.Impulse);                
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.Translate(0, 0, speed * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, transform.rotation, speed * Time.deltaTime);
         if (transform.position.z == -500.0f)
         {
             Destroy(gameObject);

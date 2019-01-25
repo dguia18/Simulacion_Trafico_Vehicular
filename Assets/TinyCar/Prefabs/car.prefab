@@ -241,7 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000010768147270}
   - component: {fileID: 7890815227048424698}
-  - component: {fileID: 7856737320725985001}
+  - component: {fileID: 4028344598812364525}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -257,7 +257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000011545962798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 8.8, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 4000011807930390}
@@ -278,30 +278,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impulseForce: 10
-  speed: 15
+  speed: 2
   Terrestre: 1
   HitosPatronMovimiento:
-  - {fileID: 1000012898607606, guid: c6fd786275d4cdb4abd8effce60cf681, type: 3}
-  - {fileID: 1000010589355896, guid: c0b62af4e2aa1784997b0d8342bda36e, type: 3}
-  - {fileID: 1000010847750230, guid: 47e33790ee90932409a8029536a21939, type: 3}
+  - {fileID: 6188710269590454755, guid: bbe002ee7e23c1349aa6d5c8b3048b41, type: 3}
+  - {fileID: 3263225850001031042, guid: 42ee378dbc9e797479c4ad45700e8046, type: 3}
+  - {fileID: 3240742747790875505, guid: 136b1a28201808f49a747daa27a2a066, type: 3}
   VelocidadesPatronMovimiento:
   - 5
   - 5
   - 5
---- !u!64 &7856737320725985001
-MeshCollider:
+--- !u!54 &4028344598812364525
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000011545962798}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1000011737584068
 GameObject:
   m_ObjectHideFlags: 0

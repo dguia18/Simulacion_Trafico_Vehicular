@@ -240,8 +240,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000010768147270}
-  - component: {fileID: 7890815227048424698}
   - component: {fileID: 4028344598812364525}
+  - component: {fileID: 6096583029753346330}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -265,29 +265,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7890815227048424698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011545962798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ea305986c52076468b2d96e8ca4060c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulseForce: 10
-  speed: 2
-  Terrestre: 1
-  HitosPatronMovimiento:
-  - {fileID: 6188710269590454755, guid: bbe002ee7e23c1349aa6d5c8b3048b41, type: 3}
-  - {fileID: 3263225850001031042, guid: 42ee378dbc9e797479c4ad45700e8046, type: 3}
-  - {fileID: 3240742747790875505, guid: 136b1a28201808f49a747daa27a2a066, type: 3}
-  VelocidadesPatronMovimiento:
-  - 5
-  - 5
-  - 5
 --- !u!54 &4028344598812364525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -304,6 +281,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6096583029753346330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011545962798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64325597fc1872c4587a010e5d95a279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &1000011737584068
 GameObject:
   m_ObjectHideFlags: 0

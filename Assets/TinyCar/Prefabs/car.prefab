@@ -240,8 +240,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000010768147270}
-  - component: {fileID: 4028344598812364525}
   - component: {fileID: 6096583029753346330}
+  - component: {fileID: 8611897880509198508}
+  - component: {fileID: 641324135499061743}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -257,30 +258,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000011545962798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 8.8, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: 2.0003, y: 8.0736, z: 0.0068464}
+  m_LocalScale: {x: 42.014, y: 42.014, z: 42.014}
   m_Children:
   - {fileID: 4000011807930390}
   - {fileID: 4000014207297072}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &4028344598812364525
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011545962798}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6096583029753346330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +278,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64325597fc1872c4587a010e5d95a279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
+--- !u!23 &8611897880509198508
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011545962798}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &641324135499061743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011545962798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd224cfcec310040a3fffb7b46c4352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1000011737584068
 GameObject:
   m_ObjectHideFlags: 0

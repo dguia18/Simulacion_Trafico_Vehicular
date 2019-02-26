@@ -13,5 +13,10 @@ public class movimientoCarro : MonoBehaviour
     void Update (){
         transform.Translate(0, 0, speed * Time.deltaTime);
         transform.rotation = Quaternion.Lerp(transform.rotation, transform.rotation, speed * Time.deltaTime);
+        if (this.transform.rotation.z == -882.99f)
+        {
+            transform.Rotate(new Vector3(0f,30f ,0f) * Time.deltaTime );
+
+        }
     }
 }

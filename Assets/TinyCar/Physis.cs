@@ -13,7 +13,7 @@ public class Physis : MonoBehaviour
         //No toma encuenta la masa}
         //GetComponent<Rigidbody>().AddForce(Vector3.right * 50f, ForceMode.VelocityChange);
         float x = Random.Range(-1, 1);
-        GetComponent<Rigidbody>().AddForce(new Vector3(x, 0f, 1f) * 100f, ForceMode.Impulse);
+        GetComponent<Rigidbody>().AddForce(new Vector3(0f, 0f, 1f) * 100f, ForceMode.Impulse);
 
     }
 
